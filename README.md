@@ -8,14 +8,14 @@ Material to provide Agentic Coding tools specific knowledge for specific tasks
 
 | File | Description |
 |------|-------------|
-| [`circuitpython-board-interaction-reference.md`](circuitpython-board-interaction-reference.md) | Full reference for interfacing with a CircuitPython board over serial in Windows 11 |
+| [`circuitpython-board-interaction-reference.md`](circuitpython-board-interaction-reference.md) | Full reference for interfacing with a CircuitPython board over serial — Windows 11 specific |
 | [`circuitpython-serial.md`](circuitpython-serial.md) | Condensed CircuitPython serial monitor cheat sheet for AI memory context |
 
 ---
 
 ### `circuitpython-board-interaction-reference.md`
 
-> **Full CircuitPython board interaction reference**
+> **Full CircuitPython board interaction reference — Windows 11 specific, not tested on Windows 10**
 
 Covers everything needed to communicate with a CircuitPython board from a host PC:
 
@@ -32,7 +32,7 @@ Covers everything needed to communicate with a CircuitPython board from a host P
 
 > **Condensed cheat sheet for AI memory / session context**
 
-A compact version of the board interaction reference for Windows 11, formatted for use in AI persistent memory files. Contains ready-to-paste code snippets for:
+A compact version of the board interaction reference, formatted for use in AI persistent memory files. Contains ready-to-paste code snippets for:
 
 - Port discovery function
 - Full monitor loop with auto-reconnect
