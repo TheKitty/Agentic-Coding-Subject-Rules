@@ -9,7 +9,6 @@ Material to provide Agentic Coding tools specific knowledge for specific tasks
 | File | Description |
 |------|-------------|
 | [`circuitpython-board-interaction-reference.md`](circuitpython-board-interaction-reference.md) | Full reference for interfacing with a CircuitPython board over serial — Windows 11 specific |
-| [`circuitpython-serial.md`](circuitpython-serial.md) | Condensed CircuitPython serial monitor cheat sheet for AI memory context |
 
 ---
 
@@ -25,16 +24,3 @@ Covers everything needed to communicate with a CircuitPython board from a host P
 - **Auto-reconnect** — survives board resets that drop the USB serial connection
 - **CIRCUITPY drive** — how to locate and copy files to the device
 - **Timing note** — serial output must complete before DMA starts in PIO-based projects
-
----
-
-### `circuitpython-serial.md`
-
-> **Condensed cheat sheet for AI memory / session context**
-
-A compact version of the board interaction reference, formatted for use in AI persistent memory files. Contains ready-to-paste code snippets for:
-
-- Port discovery function
-- Full monitor loop with auto-reconnect
-- UTF-8 output wrapping
-- Key facts (baud rate, drive letter, autoreload behaviour)
