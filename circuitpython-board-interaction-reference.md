@@ -123,7 +123,3 @@ Run the monitor as a background Bash task, then poll with TaskOutput:
 - Output goes to a temp file; TaskOutput reads it
 - The monitor survives indefinitely; use TaskStop to kill it
 
-## Timing Note (VGA project)
-
-All startup prints must complete BEFORE `sm.background_write()` in the VGA code.
-Any serial output after DMA start shifts DMA/VSYNC phase alignment.
