@@ -8,7 +8,24 @@ Material to provide Agentic Coding tools specific knowledge for specific tasks
 
 | File | Description |
 |------|-------------|
+| [`RP2350-PIO.md`](RP2350-PIO.md) | Full RP2350 PIO architecture and instruction set reference (Chapter 11 of the datasheet) |
 | [`circuitpython-board-interaction-reference.md`](circuitpython-board-interaction-reference.md) | Full reference for interfacing with a CircuitPython board over serial — Windows 11 specific |
+
+---
+
+### `RP2350-PIO.md`
+
+> **RP2350 PIO reference — compiled from Datasheet DS-2, Chapter 11 (pp. 877–961)**
+
+Covers the full PIO subsystem for use when writing or debugging PIO programs:
+
+- **Architecture** — 3 PIO blocks, 4 state machines each, shared 32-instruction memory, FIFOs, IRQ flags
+- **RP2350 vs RP2040 changes** — new instructions (`WAIT JMPPIN`, `MOV PINDIRS`), cross-PIO IRQ (PREV/NEXT), `GPIOBASE`, simultaneous SM control
+- **Programmer's model** — OSR/ISR, shift counters, stall conditions, FIFO modes, clock dividers, GPIO mapping
+- **pioasm directives** — `.pio_version`, `.side_set`, `.wrap`, `.fifo`, `.mov_status`, and all other directives
+- **Full instruction set** — JMP, WAIT, IN, OUT, PUSH, PULL, MOV, IRQ, SET with encoding tables and syntax
+- **Key constraints and gotchas** — `set` max 31, nested loop limits, side-set during stall, cross-PIO IRQ startup phase, rp2pio pin conflicts
+- **adafruit_pioasm notes** — CircuitPython-specific differences, `irq next` requirements, SM creation order for correct phase
 
 ---
 
