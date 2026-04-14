@@ -8,7 +8,7 @@ Material to provide Agentic Coding tools specific knowledge for specific tasks
 
 | File | Description |
 |------|-------------|
-| [`RP2350-PIO.md`](RP2350-PIO.md) | Full RP2350 PIO architecture and instruction set reference (Chapter 11 of the datasheet) |
+| [`RP2350-PIO.md`](RP2350-PIO.md) | Full RP2350 PIO architecture and instruction set reference (Chapter 11 of the datasheet and other sources) |
 | [`circuitpython-board-interaction-reference.md`](circuitpython-board-interaction-reference.md) | Full reference for interfacing with a CircuitPython board over serial — Windows 11 specific |
 
 ---
